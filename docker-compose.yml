@@ -1,0 +1,21 @@
+version: '3.9'
+
+services:
+  backend:
+    build:
+      context: ./server
+    container_name: backend-nodejs
+    volumes:
+      - ./server:/app
+      - /app/node_modules
+    tty: true
+    ports:
+      - "5001:5001"
+
+  frontend:
+    build:
+      context: ./client
+    container_name: frontend-react
+    ports:
+      - '3000:3000'
+    stdin_open: true
