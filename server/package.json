@@ -1,0 +1,22 @@
+{
+	"name": "finviz-server",
+	"version": "1.0.0",
+	"type": "module",
+	"main": "main.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"server": "nodemon ./main.js",
+		"parse": "node ./xml-parser/xml-parser.js"
+	},
+	"author": "repka.marek@gmail.com",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^4.21.0",
+		"xml-js": "^1.6.11"
+	},
+	"devDependencies": {
+		"nodemon": "^3.1.7"
+	}
+}
